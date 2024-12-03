@@ -11,9 +11,9 @@ app.use(express.json());
 app.use(helmet());
 app.use(cors());
 
-app.use("/api/v1/events", (req, res, next) => {
+app.use("/api/v1/Events", (req, res, next) => {
   res.status(200).json({
-    message: "listening to the events route",
+    message: "listening to the Events route",
   });
 });
 
